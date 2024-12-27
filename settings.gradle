@@ -1,0 +1,10 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google() // For Android dependencies
+        mavenCentral() // For Kotlin and general dependencies
+        maven { url 'https://maven.pkg.jetbrains.space/public/p/compose/dev' } // Required for the Compose plugin
+    }
+}
+rootProject.name = "CleanArchitectureNoteApp"
+include ':app'
