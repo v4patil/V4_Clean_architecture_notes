@@ -12,14 +12,15 @@ class NoteRepositoryImpl(private val dao: NoteDao): NoteRepository {
     }
 
     override suspend fun getNoteById(id: Int): Note? {
-        return dao.getNoteByID(id)
+//        return dao.getNoteByID(id)
+        return null
     }
 
     override suspend fun insertNote(note: Note) {
-       dao.insertNote(note)
+//       dao.insertNote(note)
     }
 
     override suspend fun deleteNote(note: Note) {
-        dao.deleteNote(note)
+//        dao.deleteNote(note)
     }
 }

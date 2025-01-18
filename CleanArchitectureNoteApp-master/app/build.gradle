@@ -5,6 +5,14 @@ plugins {
     id 'dagger.hilt.android.plugin'
 }
 
+org.gradle.jvmargs=-Xmx2g
+kapt.incremental.apt=true
+kapt.use.worker.api=true
+android.useAndroidX=true
+android.enableJetifier=true
+org.gradle.parallel=true
+
+
 android {
     compileSdk 33
 

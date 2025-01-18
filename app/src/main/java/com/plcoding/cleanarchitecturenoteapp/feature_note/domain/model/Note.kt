@@ -10,7 +10,7 @@ import com.plcoding.cleanarchitecturenoteapp.ui.theme.RedPink
 import com.plcoding.cleanarchitecturenoteapp.ui.theme.Violet
 
 
-@Entity
+@Entity(tableName = "note")
 data class Note(
     @ColumnInfo(name = "title")
     val title: String,
@@ -24,7 +24,8 @@ data class Note(
     @ColumnInfo(name = "color")
     val color: Int,
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
     val id: Int? = null
 ){
     companion object{

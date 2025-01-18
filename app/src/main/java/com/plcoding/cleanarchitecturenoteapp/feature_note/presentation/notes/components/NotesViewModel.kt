@@ -50,7 +50,7 @@ class NotesViewModel @Inject constructor(
             }
             is NotesEvent.RestoreNote ->{
                 viewModelScope.launch {
-                    noteUseCases.addNote(recentlyDeletedNote ?: return@launch)
+//                    noteUseCases.addNote(recentlyDeletedNote ?: return@launch)
                     recentlyDeletedNote = null
                 }
 
